@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GastroPadel Score — Privacy &amp; Support</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f7f6f3;
+    --surface: #ffffff;
+    --border: #e2e0da;
+    --text: #1c1d20;
+    --text-muted: #6b6f76;
+    --accent-a: #b9740f;
+    --accent-b: #1a8f8f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0c10;
+      --surface: #15171c;
+      --border: #23262d;
+      --text: #eef0f2;
+      --text-muted: #9aa1ab;
+      --accent-a: #f5a623;
+      --accent-b: #29d6d6;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", -apple-system, sans-serif;
+    line-height: 1.65;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 6vw 10vh;
+  }
+
+  .doc {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .bars {
+    display: flex;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .bars span { flex: 1; }
+  .bars span:first-child { background: var(--accent-a); }
+  .bars span:last-child { background: var(--accent-b); }
+
+  h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin: 0 0 0.3rem;
+  }
+
+  .app-name {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-a);
+    margin: 0 0 0.6rem;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0 0 3rem;
+  }
+
+  .lede {
+    font-size: 1.15rem;
+    color: var(--text);
+    border-left: 3px solid var(--accent-a);
+    padding-left: 1.2rem;
+    margin: 0 0 3rem;
+    max-width: 60ch;
+  }
+
+  section {
+    margin-bottom: 2.4rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid var(--border);
+  }
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  h2.page-heading {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 0 1.6rem;
+    padding-top: 0.5rem;
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 0.6rem;
+  }
+
+  h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 0 0.7rem;
+  }
+
+  p {
+    max-width: 62ch;
+    color: var(--text);
+    margin: 0 0 0.8rem;
+  }
+  p:last-child { margin-bottom: 0; }
+
+  .muted { color: var(--text-muted); }
+
+  a {
+    color: var(--accent-b);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  a:focus-visible {
+    outline: 2px solid var(--accent-b);
+    outline-offset: 2px;
+  }
+
+  footer {
+    margin-top: 3rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+  <div class="bars"><span></span><span></span></div>
+
+  <div class="app-name">GastroPadel Score</div>
+  <h1>Privacy &amp; Support</h1>
+  <p class="meta">Last updated 27 August 2026</p>
+
+  <p class="lede">The short version: this app does not collect, store, or transmit any personal data, anywhere, ever.</p>
+
+  <h2 class="page-heading" id="privacy">Privacy Policy</h2>
+
+  <section>
+    <div class="eyebrow">Accounts</div>
+    <h2>No sign-in, no account</h2>
+    <p>GastroPadel Score has no account system. There's nothing to register for and nothing tied to your identity.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Match data</div>
+    <h2>Stays on your device</h2>
+    <p>Scores, team names, and settings are held only in the app's local storage on your phone. None of it is sent to a server, because the app doesn't have one. Uninstalling the app removes this data completely.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Tracking</div>
+    <h2>No analytics, no advertising</h2>
+    <p>The app includes no analytics SDKs, no advertising identifiers, and no third-party trackers of any kind. Your use of the app is not measured or reported to anyone, including us.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Flic 2 button</div>
+    <h2>A local Bluetooth connection only</h2>
+    <p>If you pair a Flic 2 button, the app talks to it directly over Bluetooth to register button presses. This connection is local to your device and involves no data leaving your phone.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Changes</div>
+    <h2>If this ever changes</h2>
+    <p class="muted">Should a future version of the app introduce any data collection, this policy will be updated first, with the change described plainly here.</p>
+  </section>
+
+  <h2 class="page-heading" id="support">Support</h2>
+
+  <section style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+    <div class="eyebrow">Contact</div>
+    <h2>Get in touch</h2>
+    <p>Questions, feedback, or something not working as expected? Email <a href="mailto:timmoorcroft@gmail.com">timmoorcroft@gmail.com</a> and we'll get back to you.</p>
+  </section>
+
+  <footer>
+    GastroPadel Score
+  </footer>
+</div>
+</body>
+</html>
